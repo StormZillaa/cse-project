@@ -30,4 +30,68 @@ char checks(){
     if(GetAsyncKeyState(VK_KEY_A)){
     return 'a';
   }
+    if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
+  }
+    if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
+  }
+    if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
+  }
+    if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
+  }
+    if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
+  }
+    if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
+  }
+    if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
+  }
+    if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
+  }
+    if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
+  }
+    if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
+  }
+    if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
+  }
+    if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
+  }
+    if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
+  }
+    if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
+  }
+    if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
+  }
+    if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
+  }
+    if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
+  }
+    if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
+  }
+    if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
+  }
+    if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
+  }
+    if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
+  }
+  
 }
