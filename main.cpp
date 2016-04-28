@@ -18,7 +18,16 @@ int main(){
   }
 }
 char checks(){
-  if(GetAsyncKeyState(VK_)){
-    
+  if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
+  }
+    if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
+  }  
+  if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
+  }
+    if(GetAsyncKeyState(VK_KEY_A)){
+    return 'a';
   }
 }
