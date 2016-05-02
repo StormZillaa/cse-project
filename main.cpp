@@ -103,6 +103,9 @@ char checks(){
   else if(GetAsyncKeyState(VK_RSHIFT)||GetAsyncKeyState(VK_LSHIFT)){
     return cap_check();
   }
+  else{
+    return cap_check();
+  }
 }
 char cap_check(){
       else if(GetAsyncKeyState(VK_KEY_A)){
@@ -183,5 +186,7 @@ char cap_check(){
     else if(GetAsyncKeyState(VK_KEY_Z)){
     return 'Z';
   }
-  
+  else{
+    return ' ';
+  }
 }
